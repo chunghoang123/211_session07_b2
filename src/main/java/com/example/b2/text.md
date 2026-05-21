@@ -42,11 +42,8 @@ public class SecurityAspect {
 
 }
 
+add vip
+    admin
 
 
-Yêu cầu nộp bài:
 
-Phân tích:
-File: Tạo 1 file phan_tich.md hoặc phan_tich.txt ở thư mục root của dự án (cùng cấp với build.gradle)
-Yêu cầu: Giải thích tại sao việc chỉ in log trong @Before Advice không thể ngăn chặn phương thức gốc thực thi?
-Thực thi: Sửa lại SecurityAspect. Nếu currentUserRole không phải "ADMIN", bắt buộc phải ném ra một RuntimeException (hoặc AccessDeniedException) để ngắt ngay lập tức luồng chạy của chương trình.
